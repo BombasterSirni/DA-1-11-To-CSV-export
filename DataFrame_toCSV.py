@@ -33,8 +33,11 @@ def main():
     filename = input("Введите путь к экспорт-файлу в string-формате: ")
     n_samples, n_features, rand_seed = list(map(int, 
                                                 input("Введите кол-во строк, признаков датафрейма, а также случайное число: ").split()))
+    sep = input("Введите разделитель: ")
+    nans_input = input("Введите символ, чем заполнять пропуски: ")
+    
     new_dataset = getSynthoDataset(n_samples=n_samples, n_features=n_features, random_seed=rand_seed)
-    exportToCsv(new_dataset, filename, idxs=None)
+    exportToCsv(new_dataset, filename, separator=sep, nan_input=nans_input, idxs=None)
     
     
 main()
