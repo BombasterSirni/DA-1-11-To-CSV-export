@@ -13,6 +13,7 @@ def getSynthoDataset(n_samples, n_features, random_seed):
     return data
 
 
+
 # Экспорт датафрейма data в CSV-файл по пути 
 def exportToCsv(data, export_filename=None, separator=",", nan_input='', idxs=None):
     
