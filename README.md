@@ -3,7 +3,10 @@ This script generates a synthetic classification dataset using scikit-learn's ma
 
 ## Requirements
 - Python 3.x
-- Install dependencies via: pip install -r requirements.txt
+- Install dependencies via: 
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 - Run the script from the command line with the required arguments.
